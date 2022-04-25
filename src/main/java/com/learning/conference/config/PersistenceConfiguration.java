@@ -26,7 +26,7 @@ public class PersistenceConfiguration {
         builder.url(baseUrl);
         builder.username(userName);
         builder.password(password);
-        System.out.println("My custom data-source bean has been initialized and ser");
+        System.out.println("My custom data-source bean has been initialized and set");
         return builder.build();
     }
 }

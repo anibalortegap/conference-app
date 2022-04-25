@@ -4,6 +4,7 @@ import com.learning.conference.models.Session;
 import com.learning.conference.repositories.SessionRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,6 +27,7 @@ public class SessionsController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Session create(@RequestBody final Session session){
         return sessionRepository.saveAndFlush(session);
     }

@@ -7,7 +7,6 @@ import java.util.List;
 
 @Entity(name = "sessions")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-
 public class Session {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

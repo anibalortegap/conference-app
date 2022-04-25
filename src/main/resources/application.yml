@@ -1,4 +1,10 @@
+#Server Properties
 server:
   port: 5001
+#Core Properties
+spring:
+  profiles:
+    active: dev
+#Custom Properties
 app:
   version: 1.0.0

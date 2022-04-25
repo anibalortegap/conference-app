@@ -27,6 +27,7 @@ public class Speaker {
 
 
     @ManyToMany(mappedBy = "speakers")
+
     @JsonIgnore
     private List<Session> sessions;
 
